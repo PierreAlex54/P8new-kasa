@@ -1,0 +1,11 @@
+.banner {
+  position: relative;
+  background-image: var(--bgImage);
+  background-size: cover;
+  background-position: center;
+  height: 223px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}

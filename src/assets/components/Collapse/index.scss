@@ -1,0 +1,61 @@
+.collapse {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.collapseHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  height: 53px;
+  max-width: 100%;
+  border-radius: 5px;
+  background-color: var(--mainRed);
+  color: white;
+  margin: auto;
+  padding: 0 10px;
+
+  & svg {
+    transition: transform 0.3s ease;
+  }
+
+  & .rotate {
+    transform: rotate(180deg);
+  }
+}
+
+.collapseContent {
+  max-width: 100%;
+  margin: auto;
+  max-height: 0;
+  overflow: hidden;
+  background-color: transparent;
+  padding: 0 10px;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.2s ease, transform 0.5s ease;
+  transform: translateY(-10px);
+
+  &.open {
+    max-width: 100%;
+    max-height: 200px;
+    background-color: var(--backGrey);
+    margin: auto;
+    padding: 10px;
+    text-align: justify;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.collapseContent p {
+  margin: 0;
+  opacity: 1;
+  transition: opacity 0.2s ease, transform 0.5s ease;
+  transform: translateY(-10px);
+  overflow: hidden;
+}
+
+.collapseContent.open p {
+  transform: translateY(0);
+}

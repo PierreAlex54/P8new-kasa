@@ -1,0 +1,9 @@
+@import "./styles/variables.scss";
+body {
+  margin: 0;
+  padding: 44px;
+
+  @media screen and (max-width: 768px) {
+    padding: 20px 10px;
+  }
+}

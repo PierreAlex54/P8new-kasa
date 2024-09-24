@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  @media screen and (max-width: 768px) {
+    gap: 1rem;
+  }
+
+  & .navLogo {
+    margin-right: auto;
+  }
+
+  & .navLogoImg {
+    width: 210px;
+    height: auto;
+
+    @media screen and (max-width: 768px) {
+      width: 175px;
+      max-width: 100%;
+    }
+  }
+
+  & a {
+    text-decoration: none;
+  }
+
+  & .active-link {
+    text-decoration: underline;
+  }
+}

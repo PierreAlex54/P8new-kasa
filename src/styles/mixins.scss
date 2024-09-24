@@ -1,0 +1,11 @@
+@mixin mainRadius {
+  border-radius: 25px;
+}
+
+@mixin mediumRadius {
+  border-radius: 10px;
+}
+
+@mixin smallRadius {
+  border-radius: 5px;
+}
