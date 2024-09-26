@@ -8,6 +8,7 @@ import "./Main.scss"
 
 import Home from './assets/pages/Home/index.jsx';
 import APropos from "./assets/pages/A-propos/index.jsx";
+import Error from "./assets/pages/404/index.jsx";
 
 
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: '/about',
     element: <APropos />
+  },
+  {
+    path: "*",
+    element: <Error />
   }
 ])
 

@@ -1,0 +1,35 @@
+.errorDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  color: var(--mainRed);
+  margin: 50px 0 100px 0;
+
+  & .errorCode {
+    font-weight: 700;
+    font-size: 283px;
+    margin: 0;
+
+    @media screen and (max-width: 768px) {
+      font-size: 96px;
+    }
+  }
+
+  & .errorMsg {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 100px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  & a {
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}

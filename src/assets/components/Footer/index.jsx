@@ -4,7 +4,7 @@ import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 import "./index.scss"
 
 
-function footer() {
+function Footer() {
   return (
     <footer className="footer">
             <img className="logoFooter" src={logoFooter} alt="logo Kasa footer" />
@@ -15,4 +15,4 @@ function footer() {
   )
 }
 
-export default footer
+export default Footer
