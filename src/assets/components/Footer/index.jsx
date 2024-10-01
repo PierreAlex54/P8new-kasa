@@ -1,18 +1,17 @@
-import logoFooter from "../../../assets/logoFooter.png"
+import logoFooter from "../../../assets/logoFooter.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
-import "./index.scss"
-
+import "./index.scss";
 
 function Footer() {
   return (
     <footer className="footer">
-            <img className="logoFooter" src={logoFooter} alt="logo Kasa footer" />
-            <p className="footerText">
+      <img className="logoFooter" src={logoFooter} alt="logo Kasa footer" />
+      <p className="footerText">
         <FontAwesomeIcon icon={faCopyright} /> 2020 Kasa. All rights reserved
       </p>
-        </footer>
-  )
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

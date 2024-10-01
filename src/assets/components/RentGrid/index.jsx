@@ -5,8 +5,13 @@ import "./index.scss";
 function RentGrid() {
   return (
     <div className="gridContainer">
-      {data.map((item) => (
-        <RentCard key={item.id} title={item.title} cover={item.cover} />
+      {data.map(logement => (
+        <RentCard 
+          key={logement.id} 
+          id={logement.id} 
+          title={logement.title} 
+          cover={logement.cover} 
+        />
       ))}
     </div>
   );

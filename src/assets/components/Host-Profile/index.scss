@@ -1,0 +1,31 @@
+.hostProfile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 0;
+  }
+
+  & p {
+    color: var(--mainRed);
+    font-weight: 500;
+    width: min-content;
+
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+
+  & img {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+
+    @media screen and (max-width: 768px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

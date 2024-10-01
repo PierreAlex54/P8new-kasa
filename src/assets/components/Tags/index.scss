@@ -1,0 +1,22 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 20px;
+  }
+
+  & .tag {
+    background-color: var(--mainRed);
+    color: white;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+    @media screen and (max-width: 768px) {
+      max-height: 18px;
+      font-size: 10px;
+    }
+  }
+}
